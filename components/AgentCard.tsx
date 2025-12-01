@@ -136,12 +136,14 @@ const AgentCard: React.FC<AgentCardProps> = ({ config, content, isLoading, isPen
 
   // 渲染图表
   const renderChart = () => {
-    if (!chartData || isTyping) return null; // 打字时先不显示图表，减少干扰
+    if (!chartData) return null; // 没有图表数据
+    if (isTyping) return null; // 打字机动画期间不渲染图表
+    if (isLoading || isPending) return null; // 加载或等待期间不渲染
 
     if (chartData.chartType === 'bar') {
         return (
             <div className="h-40 w-full mt-4 animate-fade-in">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="100%" height="100%" minWidth={200} minHeight={160}>
                     <BarChart data={chartData.data}>
                         <XAxis dataKey="name" tick={{fontSize: 10, fill: '#94a3b8'}} axisLine={false} tickLine={false} />
                         <Tooltip 
@@ -162,7 +164,7 @@ const AgentCard: React.FC<AgentCardProps> = ({ config, content, isLoading, isPen
     if (chartData.chartType === 'radar') {
          return (
             <div className="h-40 w-full mt-4 animate-fade-in">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="100%" height="100%" minWidth={200} minHeight={160}>
                     <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData.data}>
                         <PolarGrid stroke="#334155" />
                         <PolarAngleAxis dataKey="subject" tick={{fontSize: 10, fill: '#94a3b8'}} />
