@@ -1,5 +1,5 @@
 {
-  "name": "AlphaCouncil AI (CN)",
-  "description": "多智能体股票分析决策系统 - 包含5个分析师，2个经理，2个风控，1个总经理的专业A股分析系统。",
+  "name": "QuantAlpha AI (CN)",
+  "description": "多智能体股票决策系统 - 包含5个分析师，2个经理，2个风控，1个总经理的专业A股分析系统。",
   "requestFramePermissions": []
 }

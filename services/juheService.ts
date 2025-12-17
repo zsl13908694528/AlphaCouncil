@@ -121,7 +121,7 @@ export async function fetchStockData(symbol: string, apiKey?: string): Promise<S
     return stockData;
 
   } catch (error) {
-    console.error('[AlphaCouncil] 获取股票数据失败:', error instanceof Error ? error.message : String(error));
+    console.error('[QuantAlpha] 获取股票数据失败:', error instanceof Error ? error.message : String(error));
     return null;
   }
 }

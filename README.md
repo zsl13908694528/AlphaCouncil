@@ -1,8 +1,8 @@
-# AlphaCouncil AI - 多智能体股票分析决策系统
+# QuantAlpha AI - 多智能体股票决策系统
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![React](https://img.shields.io/badge/React-19.0-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-3.0-38bdf8)
 
-**AlphaCouncil AI** 是一个基于前沿大语言模型（LLM）技术的专业级 A 股市场分析系统。它模拟了一家顶级基金公司的完整投资委员会决策流程，由 **10 个不同角色的 AI 智能体** 组成，通过四阶段的严谨工作流，将实时行情数据转化为专业的投资决策。
+**QuantAlpha AI** 是一个基于前沿大语言模型（LLM）技术的专业级 A 股市场分析系统。它模拟了一家顶级基金公司的完整投资委员会决策流程，由 **10 个不同角色的 AI 智能体** 组成，通过四阶段的严谨工作流，将实时行情数据转化为专业的投资决策。
 
 ## 核心特性
 
